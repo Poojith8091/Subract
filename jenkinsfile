@@ -10,7 +10,7 @@ exus_pipeline"exus_pipeline"pipeline {
         // This can be http or https
         NEXUS_PROTOCOL = "http"
         // Where your Nexus is running
-        NEXUS_URL = "18.222.118.84:8081"
+        NEXUS_URL = "18.219.226.248:8081"
         // Repository where we will upload the artifact
         NEXUS_REPOSITORY = "NeusPipe"
 
