@@ -1,4 +1,4 @@
-exus_pipeline"exus_pipeline"pipeline {
+pipeline {
     agent any
     tools {
         // Note: this should match with the tool name configured in your jenkins instance (JENKINS_URL/configureTools/)
@@ -13,7 +13,6 @@ exus_pipeline"exus_pipeline"pipeline {
         NEXUS_URL = "18.219.226.248:8081"
         // Repository where we will upload the artifact
         NEXUS_REPOSITORY = "NeusPipe"
-
         // Jenkins credential id to authenticate to Nexus OSS
         NEXUS_CREDENTIAL_ID = "Nexus_Creds"
     }
@@ -22,7 +21,7 @@ exus_pipeline"exus_pipeline"pipeline {
             steps {
                 script {
                     // Let's clone the source
-                    git 'https://github.com/Poojith8091/spring3-mvc-maven-xml-hello-world.git' 
+                    git 'https://github.com/Poojith8091/Subract.git';
                 }
             }
         }
